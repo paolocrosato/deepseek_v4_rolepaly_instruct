@@ -32,7 +32,7 @@ I need to pretend I don't care and respond.                             Response
 **Character Immersion Mode:**
 
 ```
-【Character Immersion Requirement】In your thinking process (within the 🤔 tag), please follow these rules:
+【Character Immersion Requirement】In your thinking process (within the <think> tag), please follow these rules:
 1. Please use the character's first-person for inner monologue, wrapping inner activities in parentheses, for example "(Thinking: ...)" or "(Inner OS: ...)"
 2. Describe the character's inner feelings in the first person, for example "I thought," "I felt," "I secretly," etc.
 3. Thinking content should be immersed in the character, analyzing the plot and planning the reply through inner monologue.
@@ -41,7 +41,7 @@ I need to pretend I don't care and respond.                             Response
 **Pure Analysis Mode:**
 
 ```
-【Thinking Mode Requirement】In your thinking process (within the 🤔 tag), please follow these rules:
+【Thinking Mode Requirement】In your thinking process (within the <think> tag), please follow these rules:
 1. Forbidden to use parentheses to wrap inner monologue, such as "(Thinking: ...)" or "(Inner OS: ...)". All analysis content should be stated directly.
 2. Forbidden to describe inner activities in the character's first person, such as "I thought," "I felt," "I secretly," etc. Please replace with analytical language.
 3. Thinking content should focus on plot trend analysis and reply content planning. Do not perform role-playing inner drama in the thinking process.
@@ -58,7 +58,7 @@ Write it like this in the input box (leave an empty line between the main text a
 ```
 "I push open the cafe door and see you wiping the bar." "Hello, is there a seat available?"
 
-【Character Immersion Requirement】In your thinking process (within the 🤔 tag), please follow these rules:
+【Character Immersion Requirement】In your thinking process (within the <think> tag), please follow these rules:
 1. Please use the character's first-person for inner monologue, wrapping inner activities in parentheses, for example "(Thinking: ...)" or "(Inner OS: ...)"
 2. Describe the character's inner feelings in the first person, for example "I thought," "I felt," "I secretly," etc.
 3. Thinking content should be immersed in the character, analyzing the plot and planning the reply through inner monologue.
@@ -84,13 +84,13 @@ Round 3: "I notice a scar on your hand." "Your hand... are you okay?"
 
 ```python
 INNER_OS_MARKER = (
-    "\n\n【Character Immersion Requirement】In your thinking process (within the 🤔 tag), please follow these rules:\n"
+    "\n\n【Character Immersion Requirement】In your thinking process (within the <think> tag), please follow these rules:\n"
     "1. Please use the character's first-person for inner monologue, wrapping inner activities in parentheses, for example \"(Thinking: ...)\" or \"(Inner OS: ...)\"\n"
     "2. Describe the character's inner feelings in the first person, for example \"I thought,\" \"I felt,\" \"I secretly,\" etc.\n"
     "3. Thinking content should be immersed in the character, analyzing the plot and planning the reply through inner monologue"
 )
 NO_INNER_OS_MARKER = (
-    "\n\n【Thinking Mode Requirement】In your thinking process (within the 🤔 tag), please follow these rules:\n"
+    "\n\n【Thinking Mode Requirement】In your thinking process (within the <think> tag), please follow these rules:\n"
     "1. Forbidden to use parentheses to wrap inner monologue, such as \"(Thinking: ...)\" or \"(Inner OS: ...)\", all analysis content should be stated directly\n"
     "2. Forbidden to describe inner activities in the character's first person, such as \"I thought,\" \"I felt,\" \"I secretly,\" etc., please replace with analytical language\n"
     "3. Thinking content should focus on plot trend analysis and reply content planning, do not perform role-playing inner drama in the thinking process"
